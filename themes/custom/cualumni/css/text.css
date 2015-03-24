@@ -1,0 +1,344 @@
+/* line 4, ../sass/text.scss */
+body {
+  font-size: 62.5%;
+  font-family: "Neue Helvetica W01", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #202020;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-style: normal;
+  font-variant: normal;
+}
+
+/* line 15, ../sass/text.scss */
+#page {
+  font-size: 1.6em;
+  line-height: 140%;
+}
+
+/* line 21, ../sass/text.scss */
+#section-footer {
+  font-size: 90%;
+}
+
+/* line 25, ../sass/text.scss */
+.font-size-small #zone-content,
+.font-size-small #zone-after-content {
+  font-size: 100%;
+  line-height: 140%;
+}
+
+/* line 29, ../sass/text.scss */
+.font-size-small #section-footer {
+  line-height: 140%;
+}
+
+/* line 32, ../sass/text.scss */
+a:link, a:visited {
+  color: #007bc8;
+  text-decoration: none;
+}
+
+/* line 37, ../sass/text.scss */
+a:hover {
+  color: #e51c23;
+  text-decoration: none;
+}
+
+/* line 43, ../sass/text.scss */
+a:active,
+a:focus {
+  color: #e51c23;
+  text-decoration: none;
+}
+
+/* line 48, ../sass/text.scss */
+hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+/* line 56, ../sass/text.scss */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 120%;
+  margin: 0 0 10px 0;
+}
+
+/* line 62, ../sass/text.scss */
+#zone-content h1,
+.page-title-section h1 {
+  font-size: 220%;
+  font-weight: 200;
+  font-family: "Neue Helvetica W01", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 68, ../sass/text.scss */
+h2 {
+  font-size: 160%;
+  font-weight: 200;
+}
+
+/* line 73, ../sass/text.scss */
+.headings-bold #zone-content h1, .headings-bold .page-title-section h1, .headings-bold h2, .headings-bold h3, .headings-bold h4 {
+  font-weight: 700;
+}
+/* line 76, ../sass/text.scss */
+.headings-bold h5, .headings-bold h6 {
+  font-weight: 600;
+}
+/* line 79, ../sass/text.scss */
+.headings-bold h2.block-title, .headings-bold h2.node-title {
+  font-weight: 700;
+}
+
+/* Make site titles the same size if it's an H1 (home) or H2 (internal) */
+/* Make it a bit smaller for block headers */
+/* line 87, ../sass/text.scss */
+h2.block-title {
+  font-size: 160%;
+  font-weight: 200;
+}
+
+/* line 92, ../sass/text.scss */
+.sidebar h2,
+.sidebar h2.block-title {
+  font-size: 125%;
+}
+
+/* line 98, ../sass/text.scss */
+#zone-after-content h2,
+#zone-after-content h2.block-title,
+#zone-after-content-2 h2,
+#zone-after-content-2 h2.block-title {
+  font-size: 150%;
+}
+
+/* line 101, ../sass/text.scss */
+#zone-footer h2.block-title {
+  font-size: 110%;
+}
+
+/* line 104, ../sass/text.scss */
+h2.node-title {
+  font-size: 160%;
+  font-weight: 200;
+}
+
+/* line 109, ../sass/text.scss */
+h3 {
+  font-size: 140%;
+  font-weight: 200;
+}
+
+/* line 114, ../sass/text.scss */
+h4 {
+  font-size: 126%;
+  font-weight: 200;
+}
+
+/* line 119, ../sass/text.scss */
+h5 {
+  font-size: 113%;
+  font-weight: 200;
+}
+
+/* line 124, ../sass/text.scss */
+h6 {
+  font-size: 100%;
+  font-weight: bold;
+  font-weight: 200;
+}
+
+/* line 131, ../sass/text.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 135, ../sass/text.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 141, ../sass/text.scss */
+.item-list ul li,
+.field-type-text-with-summary ul li,
+.field-type-text-long ul li {
+  list-style: disc;
+  margin: 0 0 10px 0;
+}
+/* line 147, ../sass/text.scss */
+.item-list ul ul li,
+.item-list ul ul ul ul li,
+.item-list ul ul ul ul ul ul li,
+.field-type-text-with-summary ul ul li,
+.field-type-text-with-summary ul ul ul ul li,
+.field-type-text-with-summary ul ul ul ul ul ul li,
+.field-type-text-long ul ul li,
+.field-type-text-long ul ul ul ul li,
+.field-type-text-long ul ul ul ul ul ul li {
+  list-style: circle;
+}
+/* line 152, ../sass/text.scss */
+.item-list ul ul ul li,
+.item-list ul ul ul ul ul li,
+.item-list ul ul ul ul ul ul ul li,
+.field-type-text-with-summary ul ul ul li,
+.field-type-text-with-summary ul ul ul ul ul li,
+.field-type-text-with-summary ul ul ul ul ul ul ul li,
+.field-type-text-long ul ul ul li,
+.field-type-text-long ul ul ul ul ul li,
+.field-type-text-long ul ul ul ul ul ul ul li {
+  list-style: disc;
+}
+/* line 156, ../sass/text.scss */
+.item-list ul ul,
+.item-list ol ol,
+.field-type-text-with-summary ul ul,
+.field-type-text-with-summary ol ol,
+.field-type-text-long ul ul,
+.field-type-text-long ol ol {
+  margin: 10px 0 0 0;
+}
+/* line 160, ../sass/text.scss */
+.item-list ol li,
+.field-type-text-with-summary ol li,
+.field-type-text-long ol li {
+  margin: 0 0 10px 0;
+}
+
+/* line 169, ../sass/text.scss */
+.node ol,
+.node ul,
+ul,
+ol {
+  padding-left: 1.5em;
+}
+
+/* line 175, ../sass/text.scss */
+.node ul.inline,
+.node ol.inline,
+ul.inline, ol.inline {
+  padding-left: 0;
+}
+
+/* line 179, ../sass/text.scss */
+ul.list-style-nobullet {
+  list-style: none;
+  list-style-image: none;
+  padding-left: 0;
+}
+
+/* line 184, ../sass/text.scss */
+ul.list-style-underline > li {
+  list-style: none;
+}
+
+/* line 188, ../sass/text.scss */
+ul.list-style-underline {
+  list-style: none;
+  list-style-image: none;
+  padding-left: 0;
+}
+
+/* line 193, ../sass/text.scss */
+ul.list-style-underline > li {
+  list-style: none;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+/* line 198, ../sass/text.scss */
+ul.list-style-border {
+  list-style: none;
+  list-style-image: none;
+  padding-left: 0;
+}
+
+/* line 203, ../sass/text.scss */
+ul.list-style-border > li {
+  list-style: none;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  margin-bottom: -1px;
+}
+
+/* line 213, ../sass/text.scss */
+p, dl, hr, ol,
+ul, pre, table, address, fieldset {
+  margin: 0 0 20px 0;
+}
+
+/* line 219, ../sass/text.scss */
+dt, .admin h3 {
+  font-weight: 600;
+  margin: 0;
+}
+
+/* line 224, ../sass/text.scss */
+dd {
+  padding-left: 10px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+/* line 228, ../sass/text.scss */
+dd p {
+  margin-bottom: 10px;
+}
+
+/* line 233, ../sass/text.scss */
+blockquote {
+  margin: 0px 20px 20px;
+  padding-left: 20px;
+  border-left: 4px solid #e0e0e0;
+}
+
+/* line 240, ../sass/text.scss */
+small,
+.small-text {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* line 244, ../sass/text.scss */
+sub, sup {
+  /* Specified in % so that the sup/sup is the
+     right size relative to the surrounding text */
+  font-size: 75%;
+  /* Zero out the line-height so that it doesn't
+     interfere with the positioning that follows */
+  line-height: 0;
+  /* Where the magic happens: makes all browsers position
+     the sup/sup properly, relative to the surrounding text */
+  position: relative;
+  /* Note that if you're using Eric Meyer's reset.css, this
+     is already set and you can remove this rule */
+  vertical-align: baseline;
+}
+
+/* line 262, ../sass/text.scss */
+sup {
+  /* Move the superscripted text up */
+  top: -0.5em;
+}
+
+/* line 267, ../sass/text.scss */
+sub {
+  /* Move the subscripted text down, but only
+     half as far down as the superscript moved up */
+  bottom: -0.25em;
+}
+
+/* line 273, ../sass/text.scss */
+strong {
+  font-weight: 600;
+}
+
+/* line 276, ../sass/text.scss */
+.lead {
+  font-size: 130%;
+  line-height: 125%;
+}
