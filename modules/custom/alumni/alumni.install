@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * Implements hook_install().
+ *
+ * Enable cu_block_row, cu_content_list, cu_video_reveal, cutradition(theme)
+ */
+function webcentral_install() {
+  module_enable(array(
+    'cu_block_row',
+    'cu_content_list',
+    'cu_video_reveal',
+  ));
+  theme_enable(array(
+    'cutradition',
+  ));
+  variable_set('theme_default', 'cutradition');
+}
