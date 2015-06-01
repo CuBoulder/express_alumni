@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Set up some things beforehand.
+ */
+
+
+/**
+ * Copy field_person_bio to body.
+ */
+function people_content_type_update_7101() {
+
+  // Start with data field.
+  $result = db_query('SELECT * FROM {field_data_field_person_bio}');
+  foreach ($result as $record) {
+    $record->body_value = $record->field_person_bio_value;
+    unset($record->field_person_bio_value);
+    $record->body_format = $record->field_person_bio_format;
+    unset($record->field_person_bio_format);
+    drupal_write_record('field_data_body', $record);
+  }
+  // Copy revision field.
+  $result = db_query('SELECT * FROM {field_revision_field_person_bio}');
+  foreach ($result as $record) {
+    $record->body_value = $record->field_person_bio_value;
+    unset($record->field_person_bio_value);
+    $record->body_format = $record->field_person_bio_format;
+    unset($record->field_person_bio_format);
+    drupal_write_record('field_revision_body', $record);
+  }
+}

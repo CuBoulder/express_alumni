@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * @file
+ * Set up some things beforehand.
+ */
+
+// at one point this file included Migrate functions
+// they have been removed
