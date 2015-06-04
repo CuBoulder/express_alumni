@@ -1,0 +1,37 @@
+<?php
+
+/**
+ *
+ * Implements hook_shortcode_info
+ */
+function cu_storify_embed_shortcode_info() {
+  $shortcodes = array();
+  $shortcodes['storify'] = array(
+    'title' => t('Storify Embed'),
+    'description' => t('Embed content from storify.com'),
+    'process callback' => 'cu_storify_embed_storify_embed',
+    'tips callback' => 'cu_storify_embed_storify_tips',
+    'default settings' => array(),
+  );
+  return $shortcodes;
+}
+/*
+ * Process callback for cu_storify_embed_shortcode_info
+ */
+function cu_storify_embed_storify_embed($attrs, $content = NULL) {
+  if (strpos($content, 'storify.com') !== FALSE) {
+    $url = $content;
+    $url = str_replace('https:', '', $url);
+    $url = str_replace('http:', '', $url);
+    
+    $content = '<div class="storify"><iframe src="' . $url . '/embed?header=false&border=false" width="100%" height="750" frameborder="no" allowtransparency="true"></iframe><script src="' . $url . '.js?header=false&border=false"></script><noscript>[<a href="' . $url . '" target="_blank">View on Storify</a>]</noscript></div>';
+    return $content;
+  }
+}
+/*
+ * Tips callback for cu_storify_embed_shortcode_info
+ */
+function cu_storify_embed_storify_tips($format, $long) {
+  $output = '[storify]https://storify.com/CUBoulder/2015-spring-commencement[/storify]';
+  return $output;
+}
