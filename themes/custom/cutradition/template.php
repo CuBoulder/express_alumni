@@ -22,7 +22,7 @@ function cutradition_preprocess_html(&$vars) {
   $vars['attributes_array']['class'][]=$layout;
 }
 
-function alumni_breadcrumb($vars) {
+function cutradition_breadcrumb($vars) {
   $breadcrumb = $vars['breadcrumb'];
   if (!empty($breadcrumb)) {
     // Replace the Home breadcrumb with a Home icon
