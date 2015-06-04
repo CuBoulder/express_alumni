@@ -5,7 +5,7 @@
  *
  * Enable cu_block_row, cu_content_list, cu_video_reveal, cutradition(theme)
  */
-function webcentral_install() {
+function alumni_install() {
   module_enable(array(
     'cu_block_row',
     'cu_content_list',
