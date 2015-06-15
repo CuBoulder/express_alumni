@@ -46,9 +46,9 @@ ul#action-menu a { line-height: 20px; margin: 20px 0 20px 10px; }
 .breadcrumb { display: inline-block; color: #000; }
 .breadcrumb .breadcumb-divider { display: none; }
 .breadcrumb a { display: inline-block; background-color: #fff; color: #707070; padding: 3px 10px; }
-.breadcrumb .current-crumb { display: inline-block; background-color: #cfb87c; padding: 3px 10px 3px 20px; background-image: url(../images/breadcrumb-arrow.png); background-position: left center; background-repeat: no-repeat; }
-.breadcrumb .current-crumb span1 { line-height: 0px; display: inline-block; background-image: url(../images/breadcrumb-arrow.png); background-position: center center; background-repeat: no-repeat; width: 20px; padding: 0px 0; height: 20px; }
+.breadcrumb .current-crumb { display: inline-block; background-color: #cfb87c; padding: 3px 10px 3px 10px; background-image: none; }
 
+@media screen and (min-width: 720px) { .breadcrumb .current-crumb { padding: 3px 10px 3px 20px; background-image: url(../images/breadcrumb-arrow.png); background-position: left center; background-repeat: no-repeat; } }
 #zone-after-content-2-wrapper { background-color: #f4f4f4; padding-top: 20px; }
 
 #section-footer { background-color: #fff; }

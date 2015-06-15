@@ -184,20 +184,16 @@ h1#page-title-image-title {
   .current-crumb {
     display: inline-block;
     background-color: $cugold;
+    padding: 3px 10px 3px 10px;
+    background-image: none;
+  }
+}
+@media screen and (min-width: 720px)  {
+  .breadcrumb .current-crumb {
     padding: 3px 10px 3px 20px;
     background-image: url(../images/breadcrumb-arrow.png);
     background-position: left center;
     background-repeat: no-repeat;
-    span1 {
-      line-height: 0px;
-      display: inline-block;
-      background-image: url(../images/breadcrumb-arrow.png);
-      background-position: center center;
-      background-repeat: no-repeat;
-      width:20px;
-      padding:0px 0;
-      height:20px;
-    }
   }
 }
 #zone-after-content-2-wrapper {
