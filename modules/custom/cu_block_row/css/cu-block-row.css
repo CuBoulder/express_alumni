@@ -833,3 +833,22 @@
     word-wrap: break-word;
   }
 }
+/* cu block row admin css */
+/* line 253, ../scss/cu-block-row.scss */
+table.cu-block-row-table-example {
+  border: none;
+  width: 75px !important;
+}
+/* line 256, ../scss/cu-block-row.scss */
+table.cu-block-row-table-example td {
+  padding: 0;
+  margin: 0;
+  border: 4px solid #fff;
+  font-size: 2px;
+}
+
+/* line 263, ../scss/cu-block-row.scss */
+.form-item-field-block-row-distribution-und {
+  display: inline-block;
+  margin-right: 20px !important;
+}
