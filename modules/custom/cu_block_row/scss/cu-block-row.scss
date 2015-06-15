@@ -249,3 +249,18 @@ $zen-gutter-width:  40px;
     }
   }
 }
+/* cu block row admin css */
+table.cu-block-row-table-example {
+  border:none;
+  width:75px !important;
+  td {
+    padding:0;
+    margin: 0;
+    border:4px solid #fff;
+    font-size: 2px;
+  }
+}
+.form-item-field-block-row-distribution-und {
+  display: inline-block;
+  margin-right: 20px !important;
+}
