@@ -101,6 +101,7 @@ function cu_content_list_preprocess_entity(&$vars) {
         $vars['content']['content_list'] = node_view_multiple($nodes, $display, $weight = 0, $langcode = NULL);
       }
       $vars['content']['content_list']['#weight'] = 100;
+      $vars['content']['field_content_list_more_link']['#weight'] = 101;
     }
     unset($vars['content']['field_content_list_reference']);
     unset($vars['content']['field_content_list_display']);

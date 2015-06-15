@@ -48,6 +48,60 @@ function cu_content_list_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'bean-content_list-field_content_list_more_link'
+  $field_instances['bean-content_list-field_content_list_more_link'] = array(
+    'bundle' => 'content_list',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_content_list_more_link',
+    'label' => 'More Link',
+    'required' => 0,
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'advanced_link',
+      'settings' => array(
+        'default_titles' => '',
+        'urls_allowed' => 'both',
+        'urls_filter' => '',
+        'urls_search' => 'contains',
+      ),
+      'type' => 'advanced_link',
+      'weight' => 36,
+    ),
+  );
+
   // Exported field_instance: 'bean-content_list-field_content_list_reference'
   $field_instances['bean-content_list-field_content_list_reference'] = array(
     'bundle' => 'content_list',
@@ -259,6 +313,7 @@ function cu_content_list_field_default_field_instances() {
   t('Body');
   t('Content');
   t('Display');
+  t('More Link');
   t('Sort');
 
   return $field_instances;
