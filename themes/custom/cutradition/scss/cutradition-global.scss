@@ -1,6 +1,6 @@
 @import "../../cu_omega/scss/modules/_global.scss";
 @import "../../cu_omega/scss/modules/_colors.scss";
-
+@import "zen";
 
 
 body {
@@ -320,4 +320,50 @@ $border: #e7e7e7;
   margin:0;
   padding: 5px 10px;
   background-color: $border;
+}
+@media screen and (max-width: 759px) {
+  .block-content-grid-partners {
+    .feature-callout-columns-5,
+    .feature-callout-columns-6 {
+      $zen-column-count:  2;
+      .feature-callout-item {
+        clear:none;
+      }
+      .feature-callout-column-1,
+      .feature-callout-column-3,
+      .feature-callout-column-5 {
+        @include zen-grid-item(1,1);
+        clear: both;
+      }
+      .feature-callout-column-2,
+      .feature-callout-column-4,
+      .feature-callout-column-6 {
+        @include zen-grid-item(1,2);
+      }
+    }
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 960px) {
+  .block-content-grid-partners {
+    .feature-callout-columns-5,
+    .feature-callout-columns-6 {
+      $zen-column-count:  3;
+      .feature-callout-item {
+        clear:none;
+      }
+      .feature-callout-column-1,
+      .feature-callout-column-4 {
+        @include zen-grid-item(1,1);
+        clear: both;
+      }
+      .feature-callout-column-2,
+      .feature-callout-column-5 {
+        @include zen-grid-item(1,2);
+      }
+      .feature-callout-column-3,
+      .feature-callout-column-6 {
+        @include zen-grid-item(1,3);
+      }
+    }
+  }
 }
