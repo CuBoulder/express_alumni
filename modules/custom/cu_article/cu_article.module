@@ -84,8 +84,8 @@ function cu_article_preprocess_entity(&$vars) {
     $query->orderBy('created', 'DESC');
     $nids = $query->execute()->fetchCol();
     $nodes = node_load_multiple($nids);
-    
-    
+
+
     // Pass a tag type to use for node titles - this is used in the article node tpl
     foreach ($nodes as $key => $node) {
       $nodes[$key]->heading_tag['#tag'] = 'strong';
@@ -93,8 +93,8 @@ function cu_article_preprocess_entity(&$vars) {
     // Build output.
     if (!empty($nodes)) {
       $rows = array();
-      $output['articles'] = node_view_multiple($nodes, $display); 
-            
+      $output['articles'] = node_view_multiple($nodes, $display);
+
       if ($pager == 1) {
         $output['pager'] = array(
           '#theme' => 'pager',
@@ -118,11 +118,11 @@ function cu_article_preprocess_entity(&$vars) {
             '#prefix' => '<div class="more-link">',
             '#suffix' => '</div>',
           );
-        } 
+        }
       }
       if (isset($output)) {
         $vars['content'] = $output;
-      }       
+      }
     } else {
       $vars['content'] = '';
     }
@@ -144,7 +144,7 @@ function cu_article_preprocess_entity(&$vars) {
     $query->condition('n.status', 1, '=');
     $query->fields('n', array('nid', 'title'));
 
-    
+
     // Filter by tag.
     if (isset($vars['elements']['#entity']->field_article_grid_filter[LANGUAGE_NONE])) {
       $terms = array();
@@ -241,11 +241,6 @@ function cu_article_preprocess_node(&$vars) {
     $nodes = node_load_multiple($nids);
     foreach ($nodes as $key => $node) {
       $nodes[$key]->heading_tag['#tag'] = 'h2';
-    }
-    if (!$_GET['page']) {
-      $first_article = array(array_shift($nodes));
-      $output['first_article'] = node_view_multiple($first_article, 'embed');
-      $output['first_article']['#weight'] = 98;
     }
     $output['articles'] = node_view_multiple($nodes, 'teaser');
     $output['articles']['#weight'] = 99;
@@ -428,9 +423,9 @@ function cu_article_form_bean_form_alter(&$form, &$form_state, $form_id) {
  */
 function cu_article_node_view($node, $view_mode) {
   switch($node->type) {
-    case 'article':			
-      if ($view_mode == 'full' && !empty($node->field_article_external_url[LANGUAGE_NONE][0]['url'])) { 
-        $redirect = $node->field_article_external_url[LANGUAGE_NONE][0]['url'];     
+    case 'article':
+      if ($view_mode == 'full' && !empty($node->field_article_external_url[LANGUAGE_NONE][0]['url'])) {
+        $redirect = $node->field_article_external_url[LANGUAGE_NONE][0]['url'];
         if (user_access("edit any article content")) {
           drupal_set_message(t('A user without editing permissions would have been redirected to !redirect',
               array('!redirect' => l($redirect, $redirect))),
