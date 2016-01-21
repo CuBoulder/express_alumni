@@ -1,10 +1,8 @@
 name = Content List
 core = 7.x
 package = CU-Active
-dependencies[] = advanced_link
 dependencies[] = bean_admin_ui
 dependencies[] = ctools
-dependencies[] = cu_video
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = list
