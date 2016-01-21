@@ -8,7 +8,6 @@ dependencies[] = features
 dependencies[] = field_sql_storage
 dependencies[] = image
 dependencies[] = node
-dependencies[] = photo_gallery
 dependencies[] = smart_trim
 dependencies[] = strongarm
 dependencies[] = text
