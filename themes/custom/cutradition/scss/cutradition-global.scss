@@ -1,6 +1,6 @@
 @import "../../cu_omega/scss/modules/_global.scss";
 @import "../../cu_omega/scss/modules/_colors.scss";
-
+@import "zen";
 
 
 body {
@@ -184,20 +184,16 @@ h1#page-title-image-title {
   .current-crumb {
     display: inline-block;
     background-color: $cugold;
+    padding: 3px 10px 3px 10px;
+    background-image: none;
+  }
+}
+@media screen and (min-width: 720px)  {
+  .breadcrumb .current-crumb {
     padding: 3px 10px 3px 20px;
     background-image: url(../images/breadcrumb-arrow.png);
     background-position: left center;
     background-repeat: no-repeat;
-    span1 {
-      line-height: 0px;
-      display: inline-block;
-      background-image: url(../images/breadcrumb-arrow.png);
-      background-position: center center;
-      background-repeat: no-repeat;
-      width:20px;
-      padding:0px 0;
-      height:20px;
-    }
   }
 }
 #zone-after-content-2-wrapper {
@@ -324,4 +320,50 @@ $border: #e7e7e7;
   margin:0;
   padding: 5px 10px;
   background-color: $border;
+}
+@media screen and (max-width: 759px) {
+  .block-content-grid-partners {
+    .feature-callout-columns-5,
+    .feature-callout-columns-6 {
+      $zen-column-count:  2;
+      .feature-callout-item {
+        clear:none;
+      }
+      .feature-callout-column-1,
+      .feature-callout-column-3,
+      .feature-callout-column-5 {
+        @include zen-grid-item(1,1);
+        clear: both;
+      }
+      .feature-callout-column-2,
+      .feature-callout-column-4,
+      .feature-callout-column-6 {
+        @include zen-grid-item(1,2);
+      }
+    }
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 960px) {
+  .block-content-grid-partners {
+    .feature-callout-columns-5,
+    .feature-callout-columns-6 {
+      $zen-column-count:  3;
+      .feature-callout-item {
+        clear:none;
+      }
+      .feature-callout-column-1,
+      .feature-callout-column-4 {
+        @include zen-grid-item(1,1);
+        clear: both;
+      }
+      .feature-callout-column-2,
+      .feature-callout-column-5 {
+        @include zen-grid-item(1,2);
+      }
+      .feature-callout-column-3,
+      .feature-callout-column-6 {
+        @include zen-grid-item(1,3);
+      }
+    }
+  }
 }
