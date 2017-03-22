@@ -1,5 +1,9 @@
 name = Alumni
 description = Custom module for Alumni
 core = 7.x
+version = 1.0
+project = alumni
+project status url = https://github.com/CuBoulder/express_alumni
+
 dependencies[] = cu_content_list
 dependencies[] = cu_storify_embed
